@@ -1,6 +1,6 @@
 {
-  "ProjectName": "JSON测试",
-  "Introduce": "这是一个JSON测试项目，用于测试JSON数据的读取",
+  "ProjectName": "五险一金",
+  "Introduce": "用于科普五险一金知识，计算金额，分析缴纳方案",
   "GitStar": "5",
   "UpdatedTime": "2021-11-30",
   "Functionary": "汤宇婷",
