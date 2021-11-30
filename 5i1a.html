@@ -1,73 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head> 
-<meta charset="utf-8"> 
-<title>五险一金(5i1a.com)</title> 
-<style>
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #4B5658;
-    }
-    
-    li {
-        float: left;
-    }
-    
-    li a {
-        display: block;
-        color: rgb(220, 211, 195);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    li a:hover {
-        background-color: rgb(75, 86, 88);
-    }
+    <meta charset="utf-8"> 
+    <title>五险一金(5i1a.com)</title> 
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #4B5658;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(220, 211, 195);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: rgb(75, 86, 88);
+        }
     </style>
+    <script type="text/javascript" src="site.json"></script>
 </head>
+
 <body>
+    <!--引入 element-ui 的样式，-->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 必须先引入vue，  后使用element-ui -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <!-- 引入element 的组件库-->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <ul>
         <li><a class="active" href="https://panda0805.github.io/5i1a/5i1a.html">主页</a></li>
         <li><a href="https://panda0805.github.io/5i1a/%E8%AE%A1%E7%AE%97%E5%99%A8.html">计算器</a></li>
         <li><a href="https://panda0805.github.io/5i1a/%E5%88%92%E7%AE%97.html">缴纳方案</a></li>
         <li><a href="#about">客服</a></li>
-      </ul>
-<div id="container" style="width: 1250px;">
+    </ul>
+    <div id="container" style="width: 1250px;">
 
-<div id="header" style="background-color: #C2CAD7 ">
-<h1 style="margin-bottom:0;">五险一金</h1></div>
+        <div id="header" style="background-color: #C2CAD7 ">
+            <h1 style="margin-bottom:0;">五险一金</h1>
+        </div>
 
-<div id="content" style="background-color:#EADFDB;height: 550px; width: 1250px; float:left;">
-    <p>经常有人疑问：工资1万，到手才7000多，工资到底是怎么计算的？</p>
-    <p>工资扣除五险一金后和个人所得税，就是到手工资。</p>
-    <h3>五险一金有哪些</h3>
-    <p>
-        “五险”指的是五种保险，包括养老保险、医疗保险、失业保险、工伤保险和生育保险，即平时说的社保。
-    </p>
-    <p>
-        “一金”指的是住房公积金。
-    </p>
-    <p>
-        其中养老保险、医疗保险和失业保险，这三种险是由企业和个人共同缴纳的保费，工伤保险和生育保险完全是由企业承担的。个人不需要缴纳。这里要注意的是“五险”是法定的，而“一金”不是法定的。
-    </p>
-    <p>
-        因为生育保险不是所有人都会涉及，所以许多人用“四险一金”的说法代替“五险一金”。
-    </p>
-    <h3>区域性</h3>
-    <p>
-        每个公司，每个地区的缴纳基数不同。所以需要先选择地区。
-    </p>
-</div>
+        <div id="content" style="background-color:#EADFDB;height: 550px; width: 1250px; float:left;">
+            <p>经常有人疑问：工资1万，到手才7000多，工资到底是怎么计算的？</p>
+            <p>工资扣除五险一金后和个人所得税，就是到手工资。</p>
+            <h3>五险一金有哪些</h3>
+            <p>
+                “五险”指的是五种保险，包括养老保险、医疗保险、失业保险、工伤保险和生育保险，即平时说的社保。
+            </p>
+            <p>
+                “一金”指的是住房公积金。
+            </p>
+            <p>
+                其中养老保险、医疗保险和失业保险，这三种险是由企业和个人共同缴纳的保费，工伤保险和生育保险完全是由企业承担的。个人不需要缴纳。这里要注意的是“五险”是法定的，而“一金”不是法定的。
+            </p>
+            <p>
+                因为生育保险不是所有人都会涉及，所以许多人用“四险一金”的说法代替“五险一金”。
+            </p>
+            <h3>区域性</h3>
+            <p>
+                每个公司，每个地区的缴纳基数不同。所以需要先选择地区。
+            </p>
+        </div>
 
-<div id="footer" style="background-color:#97A7BE;clear:both;text-align:center;">
-版权 © 5i1a.com</div>
+        <div id="footer" style="background-color:#97A7BE;clear:both;text-align:center;">
+            版权 © 5i1a.com</div>
 
-</div>
- 
+    </div>
+
 </body>
-</html>
 
+</html>
