@@ -1,138 +1,24 @@
 <!DOCTYPE html>
 <html>
 
-<head> 
-    <title>五险一金(5i1a.com)</title> 
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="keywords" content="五险一金，个人财务管理，科普文章，财税计算器">
-    <meta name="description" content="《五险一金科普站》，介绍最新的五险一金政策，提供个人五险一金计算器，帮助用户得出最优缴纳方案">
-    <meta name="author" content="PANDA">
-    <!--跳转
-    <meta http-equiv="refresh" content="5; http://www.hdu.edu.cn">
-    -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" media="print" href="print.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width:512px) and (max-width:1024px)" href="screen512to1024.css">
-    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    <script type="text/javascript" src="site.json"></script>
-    <style>
-        span {color:burlywood;}
-    </style>
-    <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color:burlywood;
-        }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          color:gold;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover:not(.active) {
-          background-color: #111;
-        }
-        
-        .active {
-          background-color:cornsilk;
-        }
-        </style>
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-            video {
-                width: 100%;
-                height: auto;
-            }
-            .row:after {
-                content: "";
-                clear: both;
-                display: block;
-            }
-            [class*="col-"] {
-                float: left;
-                padding: 15px;
-                width: 100%;
-            }
-            @media only screen and (min-width: 600px) {
-                .col-s-12 {width: 8.33%;}
-                .col-s-2 {width: 16.66%;}
-                .col-s-3 {width: 25%;}
-                .col-s-4 {width: 33.33%;}
-                .col-s-5 {width: 41.66%;}
-                .col-s-6 {width: 50%;}
-                .col-s-7 {width: 58.33%;}
-                .col-s-8 {width: 66.66%;}
-                .col-s-9 {width: 75%;}
-                .col-s-10 {width: 83.33%;}
-                .col-s-11 {width: 91.66%;}
-                .col-s-12 {width: 100%;}
-            }
-            @media only screen and (min-width: 768px) {
-                .col-1 {width: 8.33%;}
-                .col-2 {width: 16.66%;}
-                .col-3 {width: 25%;}
-                .col-4 {width: 33.33%;}
-                .col-5 {width: 41.66%;}
-                .col-6 {width: 50%;}
-                .col-7 {width: 58.33%;}
-                .col-8 {width: 66.66%;}
-                .col-9 {width: 75%;}
-                .col-10 {width: 83.33%;}
-                .col-11 {width: 91.66%;}
-                .col-12 {width: 100%;}
-            }
-            html {
-                font-family: "Lucida Sans", sans-serif;
-            }
-            .header {
-                background-color:lightsalmon;
-                color:coral;
-                padding: 15px;
-            }
-            .menu ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
-            .menu li {
-                padding: 8px;
-                margin-bottom: 7px;
-                background-color:linen;
-                color:black
-                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-            }
-            .menu li:hover {
-                background-color:burlywood;
-            }
-            .aside {
-                background-color:burlywood;
-                padding: 15px;
-                color: black;
-                text-align: center;
-                font-size: 14px;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-            }
-            .footer {
-                background-color:burlywood;
-                color:black;
-                text-align: center;
-                font-size: 12px;
-                padding: 15px;
-            }
-            </style>
+<head>
+    <title>五险一金(5i1a.com)</title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="keywords" content="五险一金，个人财务管理，科普文章，财税计算器">
+        <meta name="description" content="《五险一金科普站》，介绍最新的五险一金政策，提供个人五险一金计算器，帮助用户得出最优缴纳方案">
+        <meta name="author" content="PANDA">
+        <!--
+        <meta http-equiv="refresh" content="5; http://www.hdu.edu.cn">
+-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" media="print" href="print.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-width:512px) and (max-width:1024px)" href="screen512to1024.css">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <script type="text/javascript" src="site.json"></script>
+        <script type="text/javascript" src="styles.json"></script>
+
+
 </head>
 
 <body>
@@ -147,45 +33,60 @@
     </p>
     <ul>
         <li><a class="active" href="home.html">Home</a></li>
-        <li><a href="#contact">Calculator</a></li>
+        <li><a href="#Calculator">Calculator</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#about">About</a></li>
-      </ul>
-     
-        
-        <div class="row">
-        
+    </ul>
+
+
+
+    <div class="col-12 col-s-12">
+        <div class="aside1">
+            <p>是否进行学习？</p>
+            <button onclick="myFunction()">当然要学习啦</button>
+            <button onclick="myFunction1()">先睡一觉</button>
+            <p id="demo"></p>
+        </div>
+    </div>
+
+
+    <div class="row">
+
         <div class="col-3 col-s-3 menu">
-        <ul>
-        <li>社保竟然可以这么用？不看后悔一辈子</li>
-        <li>六险一金比五险一金多了什么？一文看懂第六险</li>
-        <li>求职时这些坑，千万不要踩！！！</li>
-        <li>五险一金改为六险两金了！新增的一险一金是啥，又有什么用处？</li>
-        </ul>
+            <ul>
+                <li><a href="../home/news.html" target="_blank">社保竟然可以这么用？不看后悔一辈子</a></li>
+                <li><a href="../home/news.html" target="_blank">六险一金比五险一金多了什么？一文看懂第六险</a></li>
+                <li><a href="../home/news.html" target="_blank">求职时这些坑，千万不要踩！！！</a></li>
+                <li><a href="../home/news.html" target="_blank">五险一金改为六险两金了！新增的一险一金是啥，又有什么用处？</a></li>
+            </ul>
         </div>
-        
+
         <div class="col-6 col-s-9">
-        <h1>大学生不知道五险一金是什么？找工作一定会被坑！</h1>
-        <p>cr.bilibili@爱读书的King</p>
-        <video width="400" controls>
-          <source src="../video/289498713-1-208.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
+            <h1>大学生不知道五险一金是什么？找工作一定会被坑！</h1>
+            <p>cr.bilibili@爱读书的King</p>
+            <video width="400" controls>
+                <source src="../video/289498713-1-272.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
         </div>
-        
+
         <div class="col-3 col-s-12">
-        <div class="aside">
-        <h2>什么是五险一金</h2>
-        <p>五险一金是指：养老保险、医疗保险、失业保险、工伤保险、生育保险和公积金，其中养老保险、医疗保险和失业保险，这三种险是由企业和个人共同缴纳的保费；工伤保险和生育保险完全是由企业承担的，个人不需要缴纳；公积金由单位和员工各自承担50%。</p>
+            <div class="aside">
+                <h2>什么是五险一金</h2>
+                <p>五险一金是指：养老保险、医疗保险、失业保险、工伤保险、生育保险和公积金，其中养老保险、医疗保险和失业保险，这三种险是由企业和个人共同缴纳的保费；工伤保险和生育保险完全是由企业承担的，个人不需要缴纳；公积金由单位和员工各自承担50%。
+                </p>
+            </div>
         </div>
-        </div>
-        
-        </div>
-        
-        <div class="footer">
+
+    </div>
+
+    <div class="footer">
         <p>The website is under construction......</p>
-        </div>
-        
+    </div>
+
+</body>
+
+</html>
 </body>
 
 </html>
