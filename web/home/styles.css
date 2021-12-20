@@ -1,5 +1,7 @@
 body {
-    background-image: url("../img/bg3.jpg")
+    font-family: Arial;
+    padding: 10px;
+    background-color: blanchedalmond;
 }
 
 h1 {
@@ -23,6 +25,113 @@ img {
     position: absolute;
     left: 50%;
     margin-left: -181px;
+}
+
+
+/* 导航条 */
+
+.topnav {
+    overflow: hidden;
+    background-color: burlywood;
+}
+
+
+/* 导航条链接 */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* 链接颜色修改 */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* 创建两列 */
+
+
+/* Left column */
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+
+/* 右侧栏 */
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+
+/* 图像部分 */
+
+.fakeimg {
+    background: url(../img/d53f8794a4c27d1e110e19aa6f262967dcc438b4.jpeg);
+    width: 70%;
+    padding: 20px;
+}
+
+
+/* 文章卡片效果 */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* 列后面清除浮动 */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* 底部 */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: burlywood;
+    margin-top: 20px;
+}
+
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+
+@media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
 }
 
 span {
@@ -160,10 +269,17 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 
+
+/* 头部标题 */
+
 .header {
-    background-color: lightsalmon;
-    color: coral;
-    padding: 15px;
+    padding: 30px;
+    text-align: center;
+    background: burlywood;
+}
+
+.header h1 {
+    font-size: 50px;
 }
 
 .menu ul {
@@ -200,28 +316,6 @@ html {
     text-align: center;
     font-size: 14px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.footer {
-    background-color: burlywood;
-    color: black;
-    bottom: 0;
-    width: 100%;
-    position: relative;
-    text-align: center;
-    font-size: 12px;
-    padding: 7px;
-}
-
-.footer1 {
-    background-color: burlywood;
-    color: black;
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    font-size: 12px;
-    padding: 7px;
 }
 
 * {
@@ -349,4 +443,11 @@ img1 {
     right: 15px;
     top: 50%;
     margin-top: -25px;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
 }
