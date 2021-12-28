@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body onload="checkCookie()">
     <div class="header">
         <h1>五险一金科普站</h1>
         <p>胖达</p>
@@ -37,6 +37,7 @@
         <a href="../home/calculator.html">Calculator</a>
         <a href="../home/new.html">New</a>
         <a href="../home/login.html" style="float:right">Login</a>
+
     </div>
 
     <!--背景音乐-->
@@ -93,13 +94,78 @@
 
     </div>
 
+
+
+
+
+    <p>分享到：</p>
+    <a title="转发至QQ空间" charset="400-03-8" id="s_qq" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://panda0805.github.io/5i1a.github.io/web/home/home.html
+    " target="_blank">qq空间</a>
+    <a title="转发至新浪微博" charset="400-03-10" id="s_sina" href="http://v.t.sina.com.cn/share/share.php?appkey=2684493555&url=https://panda0805.github.io/5i1a.github.io/web/home/home.html
+    &title=Uid=&source=&sourceUrl=" target="_blank">新浪微博</a>
+
     <div class="footer">
         <p>The website is under construction......</p>
     </div>
 
 </body>
 
-</html>
-</body>
+
+
+<div class="main" id="main"></div>
+<script>
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i].trim();
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function checkCookie() {
+        var user = getCookie("username");
+        if (user != "") {
+            alert("欢迎 " + user + " 再次访问");
+        } else {
+            user = prompt("请输入你的名字:", "");
+            if (user != "" && user != null) {
+                setCookie("username", user, 30);
+            }
+        }
+    }
+    (function() {
+        var examplebox = document.getElementById('example')
+        var mainbox = document.getElementById('main')
+
+        examplebox.addEventListener('click', function(e) {
+            e.preventDefault()
+            var elm = e.target
+            var uri = elm.href
+            var tlt = elm.title
+            history.pushState({
+                path: uri,
+                title: tlt
+            }, null, uri)
+            mainbox.innerHTML = 'current page is ' + tlt
+        })
+        window.addEventListener('popstate', function(e) {
+            var state = e.state
+            mainbox.innerHTML = 'current page is ' + state.title
+        })
+    })()
+</script>
+
+
 
 </html>

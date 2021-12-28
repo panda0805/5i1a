@@ -15,9 +15,12 @@
         <link rel="stylesheet" type="text/css" media="print" href="print.css">
         <link rel="stylesheet" type="text/css" media="screen and (min-width:512px) and (max-width:1024px)" href="screen512to1024.css">
         <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <link href="../home/jisuanqi.css" rel="stylesheet" type="text/css" />
         <script type="text/javascript" src="site.json"></script>
         <script type="text/javascript" src="styles.json"></script>
-
+        <script type="text/javascript" src="https://xuenb.com/skin/a.js"></script>
+        <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+        <script src="../home/wuxian.js"></script>
 
 </head>
 
@@ -107,7 +110,7 @@
                         养老保险金
                     </td>
                     <td class="tdB">
-                        <input id="txtP_Pension_Percent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtP_Pension_Percent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdC">
                         <label id="lblP_Pension"></label>
@@ -119,7 +122,7 @@
                         医疗保险金
                     </td>
                     <td class="tdB">
-                        <input id="txtP_Medical_Percent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtP_Medical_Percent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdC">
                         <label id="lblP_Medical"></label>
@@ -130,7 +133,7 @@
                         失业保险金
                     </td>
                     <td class="tdB">
-                        <input id="txtP_LoseJob_Percent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtP_LoseJob_Percent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdC">
                         <label id="lblP_LoseJob"></label>
@@ -142,7 +145,7 @@
                         住房公积金
                     </td>
                     <td class="tdB">
-                        <input id="txtP_HouseFund_Pencent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtP_HouseFund_Pencent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdC">
                         <label id="lblP_HouseFund"></label>
@@ -154,7 +157,7 @@
                         补充住房公积金
                     </td>
                     <td class="tdB">
-                        <input id="txtP_AddHouseFund_Pencent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtP_AddHouseFund_Pencent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdC">
                         <label id="lblP_AddHouseFund"></label>
@@ -181,7 +184,7 @@
 
                     </td>
                     <td class="tdE">
-                        <input id="txtU_Pension_Percent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtU_Pension_Percent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdF">
                         <label id="lblU_Pension"></label>
@@ -192,7 +195,7 @@
                         医疗保险金
                     </td>
                     <td class="tdE">
-                        <input id="txtU_Medical_Percent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtU_Medical_Percent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdF">
                         <label id="lblU_Medical"></label>
@@ -203,7 +206,7 @@
                         失业保险金
                     </td>
                     <td class="tdE">
-                        <input id="txtU_LoseJob_Percent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtU_LoseJob_Percent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdF">
                         <label id="lblU_LoseJob"></label>
@@ -214,7 +217,7 @@
                         工伤保险金
                     </td>
                     <td class="tdE">
-                        <input id="txtU_Injury_Percent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtU_Injury_Percent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdF">
                         <label id="lblU_Injury"></label>
@@ -225,7 +228,7 @@
                         生育保险金
                     </td>
                     <td class="tdE">
-                        <input id="txtU_Birth_Percent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtU_Birth_Percent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdF">
                         <label id="lblU_Birth"></label>
@@ -236,7 +239,7 @@
                         住房公积金
                     </td>
                     <td class="tdE">
-                        <input id="txtU_HouseFund_Pencent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtU_HouseFund_Pencent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdF">
                         <label id="lblU_HouseFund"></label>
@@ -247,7 +250,7 @@
                         补充住房公积金
                     </td>
                     <td class="tdE">
-                        <input id="txtU_AddHouseFund_Pencent" class="itxt rightblue" type="text" style="width: 30px; text-align: center;" /><span class="unit">%</span>
+                        <input id="txtU_AddHouseFund_Pencent" class="itxt rightblue" type="text" style="width: 40px; text-align: center;" /><span class="unit">%</span>
                     </td>
                     <td class="tdF">
                         <label id="lblU_AddHouseFund"></label>
@@ -268,9 +271,6 @@
             <p>The website is under construction......</p>
         </div>
 
-</body>
-
-</html>
 </body>
 
 </html>
