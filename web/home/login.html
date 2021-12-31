@@ -20,40 +20,8 @@
 
 
 
-<script>
-    function setCookie(cname, cvalue, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        var expires = "expires=" + d.toGMTString();
-        document.cookie = cname + "=" + cvalue + "; " + expires;
-    }
 
-    function getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i].trim();
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
-
-    function checkCookie() {
-        var user = getCookie("username");
-        if (user != "") {
-            alert("欢迎 " + user + " 再次访问");
-        } else {
-            user = prompt("请输入你的名字:", "");
-            if (user != "" && user != null) {
-                setCookie("username", user, 30);
-            }
-        }
-    }
-</script>
-
-<body onload="checkCookie()">
+<body>
     <div class="header">
         <h1>五险一金科普站</h1>
         <p>胖达</p>
@@ -66,13 +34,7 @@
         本站介绍最新的五险一金<span>政策</span>，提供个人五险一金<span>计算器</span>，帮助用户找到最优缴纳方案。
     </p>
 
-    <!--背景音乐-->
-    <div class="right">
-        <audio controls>
-        <source src="../audio/bgm.mp3" type="audio/mpeg">
-      您的浏览器不支持 audio 元素。
-      </audio>
-    </div>
+
     <div class="topnav">
         <a href="../home/home.html">Home</a>
         <a href="../home/calculator.html">Calculator</a>
@@ -81,12 +43,13 @@
     </div>
 
 
-
+    <p>用户登录</p>
     <!--表单-->
     <form action="demo-form.php">
         User name: <input type="text" name="UserName" value="PANDA"><br> Password: <input type="text" name="Password" value="Qaz123"><br>
         <input type="submit" value="提交">
     </form>
+
 
 </body>
 

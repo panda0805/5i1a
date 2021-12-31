@@ -13,11 +13,10 @@
 -->
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" media="print" href="print.css">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width:512px) and (max-width:1024px)" href="screen512to1024.css">
         <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
         <link href="../home/jisuanqi.css" rel="stylesheet" type="text/css" />
         <script type="text/javascript" src="site.json"></script>
-        <script type="text/javascript" src="styles.json"></script>
+        <script type="text/javascript" src="styles.js"></script>
         <script type="text/javascript" src="https://xuenb.com/skin/a.js"></script>
         <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
         <script src="../home/wuxian.js"></script>
@@ -27,12 +26,8 @@
 <body>
     <div class="header">
         <h1>五险一金科普站</h1>
-        <p>胖达</p>
     </div>
-    <p>
-        本站介绍最新的五险一金<span>政策</span>，提供个人五险一金<span>计算器</span>，帮助用户找到最优缴纳方案。
-    </p>
-
+    <p class="serif">本站介绍最新的五险一金<span>政策</span>，提供个人五险一金<span>计算器</span>，帮助用户找到最优缴纳方案。</p>
 
 
     <div class="topnav">
@@ -42,13 +37,6 @@
         <a href="../home/login.html" style="float:right">Login</a>
     </div>
 
-    <!--背景音乐-->
-    <div class="leftcolumn">
-        <audio controls>
-        <source src="../audio/bgm.mp3" type="audio/mpeg">
-      您的浏览器不支持 audio 元素。
-      </audio>
-    </div>
 
     <div id="calc">
         <table width="100%">
@@ -268,9 +256,11 @@
             </tbody>
         </table>
         <div class="footer">
-            <p>The website is under construction......</p>
+            <pre>Published by PANDA.</pre>
         </div>
 
+
+    </div>
 </body>
 
 </html>

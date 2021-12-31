@@ -14,12 +14,19 @@ h2 {
     color: white;
 }
 
+
+/*字体单位的合理使用：em*/
+
 p {
+    line-height: 2em;
     text-indent: 32px;
     font-size: 16px;
     line-height: 32px;
     color: saddlebrown;
 }
+
+
+/*绝对定位*/
 
 img {
     position: absolute;
@@ -32,11 +39,15 @@ img {
 
 .topnav {
     overflow: hidden;
-    background-color: burlywood;
+    background-color: chocolate;
+    background-image: linear-gradient(to bottom right, chocolate, burlywood);
 }
 
 
-/* 导航条链接 */
+/* 
+    导航条链接 
+    float布局技术
+*/
 
 .topnav a {
     float: left;
@@ -135,7 +146,8 @@ img {
 }
 
 span {
-    color: burlywood;
+    font-size: 1.5em;
+    color: black;
 }
 
 ul {
@@ -152,7 +164,7 @@ li {
 
 li a {
     display: block;
-    color: gold;
+    color: brown;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -450,4 +462,11 @@ img1 {
     right: 0px;
     width: 300px;
     padding: 10px;
+}
+
+
+/*字体声明：安全字体（fallback机制）*/
+
+p.serif {
+    font-family: "Times New Roman", Times, serif;
 }

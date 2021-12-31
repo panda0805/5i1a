@@ -183,17 +183,17 @@ function btnCalc_onClick() {
 
     if (!document.getElementById("txtBasicIncome").readOnly) {
         var basicIncome = getTextBoxValue("txtBasicIncome");
-        if (basicIncome < 0) { zyyAlert("鍩烘湰宸ヨ祫", "txtBasicIncome", "lblMsgBasicIncome", basicIncome); return; }
+        if (basicIncome < 0) { zyyAlert("输入不合法", "txtBasicIncome", "lblMsgBasicIncome", basicIncome); return; }
         _BasicIncome = basicIncome;
     }
     if (!document.getElementById("txtSocialBase").readOnly) {
         var socialBase = getTextBoxValue("txtSocialBase");
-        if (socialBase < 0) { zyyAlert("绀句繚鍩烘暟", "txtSocialBase", "lblMsgSocialBase", socialBase); return; }
+        if (socialBase < 0) { zyyAlert("输入不合法", "txtSocialBase", "lblMsgSocialBase", socialBase); return; }
         _SocialBase = socialBase;
     }
     if (!document.getElementById("txtFundBase").readOnly) {
         var fundBase = getTextBoxValue("txtFundBase");
-        if (fundBase < 0) { zyyAlert("浣忔埧鍏Н閲戝熀鏁�", "txtFundBase", "lblMsgFundBase", fundBase); return; }
+        if (fundBase < 0) { zyyAlert("输入不合法", "txtFundBase", "lblMsgFundBase", fundBase); return; }
         _FundBase = fundBase;
     }
 
@@ -333,9 +333,9 @@ function getTextBoxValue(textBoxID) {
 
 function zyyAlert(section, textBoxID, lblMsgID, id) {
     var lblMsg = document.getElementById(lblMsgID);
-    if (id == -1) lblMsg.innerHTML = section + " 涓嶈兘涓虹┖";
-    else if (id == -2) lblMsg.innerHTML = section + " 鏁版嵁鏃犳晥";
-    else if (id == -3) lblMsg.innerHTML = section + " 涓嶈兘灏忎簬闆�";
+    if (id == -1) lblMsg.innerHTML = section + " !";
+    else if (id == -2) lblMsg.innerHTML = section + " !";
+    else if (id == -3) lblMsg.innerHTML = section + " !";
 
     var textBox = document.getElementById(textBoxID);
     textBox.focus();
